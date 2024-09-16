@@ -1,0 +1,316 @@
+/*cores da empresa
+
+AZUL: color: #015eae;
+Laranja: color: #f48222;
+*/
+
+*, body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+head {
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items: center;  
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: 50px;
+    overflow-y: hidden;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.menu-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #f48222;
+    transition: transform 0.3s ease;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000e8;
+    width: 250px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+.menu.open {
+    transform: translateX(0);
+    -webkit-box-shadow: 1px 0px 14px -8px rgba(255,255,255,1);
+    -moz-box-shadow: 1px 0px 14px -8px rgba(255,255,255,1);
+    box-shadow: 1px 0px 14px -8px rgba(255,255,255,1);
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+    text-align: right;
+}
+.menu ul li {
+    margin-bottom: 10px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #f48222;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.menu ul li a:hover {
+    color: #015eae;
+    transition: 0.5s;
+}
+.menu-toggle.open .menu-bar:first-child {
+    transform: translateY(10px) rotate(45deg);
+}
+.menu-toggle.open .menu-bar:last-child {
+    transform: translateY(-10px) rotate(-45deg);
+}
+.menu-toggle.open .menu-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.social-icons a img {
+    height: 50px;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social-icons a:not(:first-child) {
+    margin-left: 20px;
+}
+
+.fale-conosco {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    animation: pulse 1.5s infinite ease-in-out;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+}
+.fale-conosco p {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    width: 10vw;
+    border: 2px #f48222 solid;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: opacity 0.5s ease, visibility 0.5s;
+    display: none;
+}
+.fale-conosco p.show {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+.fale-conosco img {
+    width: 40px;
+}
+
+/*section 1 */
+
+main {
+    min-height: 80vh;
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px auto 0px;
+    flex-wrap: wrap;
+}
+.constact-callMe {
+    width: 35vw;
+}
+.constact-callMe h1 {
+    width: 90%;
+}
+.orange  {
+    color: #f48222;
+}
+.blue {
+    color: #015eae;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    min-width: 35vw;
+    border-left: 1px solid #000 ;
+    padding-left: 50px;
+}
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input, select, textarea {
+    border: 1px solid #015eae;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+input:focus, select:focus, textarea:focus {
+    border: 2px solid #f48222;
+}
+input[type=submit]{
+    background-color: #f48222;
+    border: 2px solid #015eae;
+    font-size: 20px;
+    font-weight: bold;
+    color: #015eae;
+    transition: 0.3s ease-in-out;
+}
+input[type=submit]:hover {
+    color: #fff;
+    background-color: #e26600;
+}
+
+.contact-links {
+    min-height: 80vh;
+    max-width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.contact-links a {
+    text-decoration: none;
+    color: #000;
+}
+.social-icons-contact a img{
+
+    height: 50px;
+    margin: 6px;
+}
+.social-icons-contact a img:hover {
+    scale: 1.1;
+}
+.social-icons-contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px ;
+}
+
+.social-icons-contact a:not(:first-child) {
+    margin-left: 20px;
+}
+.maps-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 350px;
+    width: 340px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+    background-image: url(../image/maps-bg.jpeg);
+    background-position: center;
+}
+
+.maps-bg:hover {
+    -webkit-box-shadow: inset 43px 43px 17px -37px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 43px 43px 17px -37px rgba(0,0,0,0.75);
+    box-shadow: inset 43px 43px 17px -37px rgba(0,0,0,0.75);
+}
+
+
+/*Epecífico*/
+@media (max-width: 616px) {
+    
+}
+/*Mobile*/
+@media (max-width: 480px) {
+    .menu {
+        width: 180px;
+    }
+    .fale-conosco {
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .fale-conosco p {
+        margin-right: 0px;
+        margin-bottom: 5px;
+        width: 20vw;
+    }
+    .social-icons-contact {
+        text-align: center;
+    }
+    .constact-callMe {
+        width: 60vw;
+        margin: 70px;
+        text-align: center;
+    }
+    .contact-form {
+        padding: 0px;
+        border: none;
+        padding: 30px;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+    .social-icons-contact {
+        margin: 0;
+        padding: 50px;
+        border-bottom: 1px solid;
+    }
+}
+/*Tablet*/
+@media (max-width: 768px) {
+    
+}
+/*Notebook*/
+@media (max-width: 1024px) {
+
+}
+/*Até 4k*/
+@media (max-width: 2056px) {
+
+}

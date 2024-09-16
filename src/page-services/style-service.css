@@ -1,0 +1,380 @@
+/*cores da empresa
+
+AZUL: color: #015eae;
+Laranja: color: #f48222;
+*/
+
+*, body, html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+head {
+    padding: 0;
+    margin: 0;
+    justify-self: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    align-items: center;  
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    height: 50px;
+    overflow-y: hidden;
+    z-index: 1000;
+}
+
+.menu-toggle {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.menu-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #f48222;
+    transition: transform 0.3s ease;
+}
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000e8;
+    width: 250px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+}
+.menu.open {
+    transform: translateX(0);
+    -webkit-box-shadow: 1px 0px 14px -8px rgba(255,255,255,1);
+    -moz-box-shadow: 1px 0px 14px -8px rgba(255,255,255,1);
+    box-shadow: 1px 0px 14px -8px rgba(255,255,255,1);
+}
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+    text-align: right;
+}
+.menu ul li {
+    margin-bottom: 10px;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #f48222;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.menu ul li a:hover {
+    color: #015eae;
+    transition: 0.5s;
+}
+.menu-toggle.open .menu-bar:first-child {
+    transform: translateY(10px) rotate(45deg);
+}
+.menu-toggle.open .menu-bar:last-child {
+    transform: translateY(-10px) rotate(-45deg);
+}
+.menu-toggle.open .menu-bar:nth-child(2) {
+    opacity: 0;
+}
+
+.social-icons a img {
+    height: 50px;
+}
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.social-icons a:not(:first-child) {
+    margin-left: 20px;
+}
+
+.fale-conosco {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    animation: pulse 1.5s infinite ease-in-out;
+    z-index: 1000;
+    display: flex;
+    align-items: flex-end;
+}
+.fale-conosco p {
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    color: #000;
+    font-size: 10px;
+    font-weight: 600;
+    width: 10vw;
+    border: 2px #f48222 solid;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: opacity 0.5s ease, visibility 0.5s;
+    display: none;
+}
+.fale-conosco p.show {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1.0);
+    }
+}
+.fale-conosco img {
+    width: 40px;
+}
+
+/*Serviços*/
+section {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 80px auto 0px;
+}
+.quality-desc {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 35vw;
+    color: #f48222;
+}
+.quality-desc span {
+    color: #015eae;
+}
+.quality-desc img {
+    width: 100px;
+}
+.quality-desc h2 {
+    margin-left: 10px;
+}
+.quality-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+    max-width: 400px;
+}
+.quality-gallery-box {
+    width: 190px;
+    height: 190px;
+    background-color: #015eae;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quality-gallery-box img {
+    width: 100%;
+    height: 100%;
+}
+.quality-gallery .desc {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.quality-gallery-box div {
+    padding: 3px;
+    background-color: #f48222;
+    width: 70%;
+    text-align: center;
+}
+.quality-gallery-box a{
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    margin: 0 auto;
+    min-height: 100vh;
+    max-width: 950px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sector-filter {
+    margin-bottom: 20px;
+}
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.service {
+    border-radius: 10px;
+    display: flex;
+    height: 250px;
+    max-width: 900px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+.service:hover {
+    transform: scale(1.01);
+}
+
+.service-img{
+    width: 250px;
+    display: flex;
+    border-radius: 10px;
+}
+.service-img img { 
+    width: 250px;
+}
+.service-desc {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
+}
+
+.service h2 {
+    margin: 0;
+    color: #000;    
+}
+
+.service p {
+    margin-top: 5px;
+
+}
+.service a {
+    background-color: #f48222;
+    width: 150px;
+    text-align: center;
+    padding: 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.service a:hover {
+    color: #015eae;
+}
+.service[data-sector="seguranca"] {
+    border: 1px solid #015eae;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    color: #015eae;
+}
+.service[data-sector="seguranca"] a {
+    background-color: #015eae;
+}
+.service[data-sector="seguranca"] a:hover {
+    color: #f48222;
+}
+.service[data-sector="serralheria"] {
+    border: 1px solid #f48222;
+    justify-content: flex-start;
+    color: #f48222;
+}
+.service[data-sector="serralheria"] .service-desc{
+    padding-left: 10px;
+}
+
+
+
+/*Até 4k*/
+@media (max-width: 2057px) {
+    .service {
+        margin: 10px;
+    }
+}
+
+/*Notebook*/
+@media (max-width: 1025px) {
+    
+}
+
+/*Tablet*/
+@media (max-width: 769px) {
+    section {
+        justify-content: space-evenly;
+    }
+    main {
+        min-width: 700px;
+    }
+    .service {
+        max-width: 100%;
+        padding: 1px;
+        margin: 1px 10px;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 481px) {
+    .menu {
+        width: 180px;
+    }
+    .fale-conosco {
+        align-items: flex-end;
+        flex-direction: column;
+    }
+    .fale-conosco p {
+        margin-right: 0px;
+        margin-bottom: 5px;
+        width: 20vw;
+    }
+    section {
+        flex-direction: column;
+    }
+    .quality-desc {
+        margin-bottom: 20px;
+        width: 80vw;
+        flex-direction: row;
+    }
+    main {
+        min-width: 10px;
+    }
+    .service.service[data-sector="serralheria"], .service[data-sector="seguranca"] {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        width: 300px;
+        margin: 10px 2px;
+    }
+    .service-desc {
+        align-items: center;
+    }
+    
+}
+
+/*Epecífico*/
+@media (max-width: 617px) {
+}

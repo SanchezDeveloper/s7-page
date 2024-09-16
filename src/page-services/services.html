@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-service.css">
+    <title>Serviços | S7 Vendas</title>
+</head>
+<body id="body">
+    <header>
+        <div class="menu-toggle" id="menuToggle">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="services.html">Serviços</a></li>
+                <li><a href="../page-contact-us/contact.html">Contatos</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/s7.portaseportoesautomaticos/" target="_blank"><img src="../image/s7-logo.png" alt="WhatsApp"></a>
+        </div>
+    </header>
+    <div class="fale-conosco">
+        <p id="bubbleParagraph">Clique no ícone e fale agora mesmo com um dos nossos Especialistas</p>
+        <a href="https://wa.me/556135273860" target="_blank"><img src="../image/whatsapp.png" alt="fale conosco via whatsapp"></a>
+    </div>
+
+    <section class="quality">
+        <div class="quality-desc">
+            <img src="../image/Selo-de-qualidade.png" alt="">
+            <h2>Tenha qualidade <span>S7</span> nos seus projetos!</h2>
+            
+        </div>
+        <div class="quality-gallery">
+            <div class="quality-gallery-box ">
+                <img src="https://media.giphy.com/media/Kd5uWrNKjhRGfopdHJ/giphy.gif" alt="Welding GIF">
+            </div>
+            <div class="quality-gallery-box desc">
+                <h2>Garantias estendidas.</h2>
+                <div><a href="../page-contact-us/contact.html">solicitar orçamento</a></div>
+            </div>
+            <div class="quality-gallery-box desc ">
+                <h2>Mão de Obra Especialista.</h2>
+                <div><a href="../page-contact-us/contact.html">solicitar orçamento</a></div>
+            </div>
+            <div class="quality-gallery-box ">
+                
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGVxNGFnaGE0aHNyamhzMGc1ejZpbjVhdjM0azBnbzJ3NnJqNzV5ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/raweEzFR4H7aas950n/giphy.gif" alt="Camera GIF">
+            </div>
+        </div>
+    </section>
+    <main>
+        <h1>Nossas Soluções</h1>
+
+        <!-- Filtro por setor -->
+        <label for="sector-filter">Filtrar por setor:</label>
+        <select id="sector-filter">
+            <option value="todos">Todos</option>
+            <option value="serralheria">Serralheira</option>
+            <option value="seguranca">Seguranca Eletrônica</option>
+        </select>
+
+        <!-- lista de serviço gerada dianamicamente -->
+        <div id="services">
+            <div class="service"></div>
+        </div>
+    </main>
+    <script src="script-service.js"></script>
+</body>
+</html>
