@@ -24,9 +24,7 @@ Você pode visualizar o site ao vivo [aqui](https://sanchezdeveloper.github.io/s
 ## Estrutura do Projeto
 
 - **index.html**: Página principal do site.
-- **/css/**: Pasta contendo o arquivo de estilos.
-- **/js/**: Pasta contendo os scripts JavaScript.
-- **/image/**: Pasta com as imagens utilizadas no site, como logos e banners.
+- **src**: Pasta contendo as demais pastas da multi-page para (estilização, js e imagens).
 
 ## Como clonar o projeto
 
