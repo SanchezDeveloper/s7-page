@@ -171,7 +171,7 @@ header {
     position: relative;
 }
 .slide {
-    width: 600%;
+    width: 500%;
     height: 100vh;
     display: flex;
     position: relative;
@@ -201,7 +201,7 @@ header {
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 42%;
+    left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
     color: #fff;
@@ -273,9 +273,7 @@ header {
 #radio5:checked ~ .first {
     margin-left: -80%;
 }
-#radio6:checked ~ .first {
-    margin-left: -100%;
-}
+
 .nav-auto {
     position: absolute;
     width: 100vw;
@@ -297,8 +295,7 @@ header {
 #radio2:checked ~ .nav-auto .a-b2, 
 #radio3:checked ~ .nav-auto .a-b3, 
 #radio4:checked ~ .nav-auto .a-b4, 
-#radio5:checked ~ .nav-auto .a-b5, 
-#radio6:checked ~ .nav-auto .a-b6 {
+#radio5:checked ~ .nav-auto .a-b5 {
     background-color: #f48222;
 }
 

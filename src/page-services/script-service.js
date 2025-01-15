@@ -74,9 +74,19 @@ function renderServices(services) {
             <div class="service-desc">
                 <h2>${service.title}</h2>
                 <p>${service.description}</p>
-                <a href="../page-contact-us/contact.html">Solicite agora seu orçamento</a>
+                <div class="service-buttons">
+                    <a href="../page-contact-us/contact.html" class="service-btn1">Solicite agora seu orçamento</a>
+                    <a href="#" class="service-btn2">Saiba Mais</a>
+                </div>
             </div>
         `;
+        // Encontrar o botão "Saiba Mais" e adicionar um evento de clique
+        const saibaMaisBtn = serviceElement.querySelector('.service-btn2');
+        saibaMaisBtn.addEventListener('click', (e) => {
+            e.preventDefault();  // Previne a navegação para a outra página
+            openModal(service);  // Abre o modal com as informações do serviço
+        });
+
         servicesContainer.appendChild(serviceElement);
     });
 }
@@ -99,6 +109,34 @@ filterSector.addEventListener('change', function() {
     renderServices(filteredServices);
 });
 
+//Modal de saiba mais dos serviços
+// Variáveis globais
+const modal = document.getElementById('service-modal');
+const modalTitle = document.getElementById('modal-title');
+const modalImage = document.getElementById('modal-image');
+const modalAdvantages = document.getElementById('modal-advantages');
+const closeModalBtn = document.getElementById('close-modal-btn');
+const overlay = document.getElementById('overlay');
 
 
+// Função para abrir o modal e preencher com os dados do serviço
+function openModal(service) {
+    // Preenche o modal com as informações do serviço
+    modalTitle.textContent = service.title;  // Título do serviço
+    modalImage.innerHTML = `<img src="${service.image2}" alt="Imagem do Serviço">`;  // Imagem adicional (image2)
+    modalAdvantages.textContent = service.advantages;  // Vantagens do serviço
+
+    // Exibe o modal e a sobrecarga (se existir)
+    modal.classList.add('active');
+    overlay.classList.add('active');
+}
+
+// Função para fechar o modal
+closeModalBtn.addEventListener('click', () => {
+    modal.classList.remove('active');  // Fecha o modal
+    overlay.classList.remove('active');  // Remove a sobrecarga (se existir)
+});
+
+// Inicializar os serviços na página
+loadServices();
 

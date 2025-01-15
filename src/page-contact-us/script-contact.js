@@ -72,12 +72,19 @@ document.addEventListener('DOMContentLoaded', populateSelect);
 // Função para gerar o link do WhatsApp
 function gerarLinkWhatsapp(dados) {
     const mensagem =
-        `Olá, me chamo ${dados.nome}\n` +
-        `Quero saber mais sobre ${dados.assunto}\n`+
-        `Mensagem específica: ${dados.mensagem}\n`;
+        `Olá, me chamo ${dados.nome}. ` +
+        `Quero saber mais sobre ${dados.assunto}. `+
+        `Mensagem específica: ${dados.mensagem}`;
 
-    // Substitua o número abaixo pelo número de telefone do WhatsApp
+    // retorna url personalizada com mensagem preenchida no forulário
     return `https://api.whatsapp.com/send?phone=6135273860&text=${encodeURIComponent(mensagem)}`;
+}
+
+// Função para verificar se o usuário está no navegador do desktop
+function verificarNavegadorDesktop() {
+    const userAgent = navigator.userAgent.toLowerCase();
+    // Detecta navegadores de desktop comuns
+    return userAgent.includes('windows') || userAgent.includes('macintosh') || userAgent.includes('linux');
 }
 
 // Seleciona o formulário pelo ID
@@ -96,6 +103,12 @@ formulario.addEventListener('submit', function(event) {
 
     // Gera o link do WhatsApp com os dados do formulário
     const linkWhatsapp = gerarLinkWhatsapp(dados);
+
+    // Verifica se o usuário está no navegador de desktop
+    if (verificarNavegadorDesktop()) {
+        // Exibe um alerta com instruções
+        alert('Você está no navegador desktop. Se o WhatsApp não abrir, escreva sua mensagem direto na conversa do whatsapp.');
+    }
 
     // Abre o link do WhatsApp em uma nova aba
     window.open(linkWhatsapp, '_blank');

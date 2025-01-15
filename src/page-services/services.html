@@ -32,8 +32,7 @@
     <section class="quality">
         <div class="quality-desc">
             <img src="../image/Selo-de-qualidade.png" alt="">
-            <h2>Tenha qualidade <span>S7</span> nos seus projetos!</h2>
-            
+            <h2>Tenha qualidade <span>S7</span> nos seus projetos!</h2> 
         </div>
         <div class="quality-gallery">
             <div class="quality-gallery-box ">
@@ -49,7 +48,7 @@
             </div>
             <div class="quality-gallery-box ">
                 
-                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExOGVxNGFnaGE0aHNyamhzMGc1ejZpbjVhdjM0azBnbzJ3NnJqNzV5ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/raweEzFR4H7aas950n/giphy.gif" alt="Camera GIF">
+                <img src="../image/portagif.gif" alt="Camera GIF">
             </div>
         </div>
     </section>
@@ -60,14 +59,25 @@
         <label for="sector-filter">Filtrar por setor:</label>
         <select id="sector-filter">
             <option value="todos">Todos</option>
-            <option value="serralheria">Serralheira</option>
-            <option value="seguranca">Seguranca Eletrônica</option>
+            <option value="Portas de Enrolar">Portas de Enrolar</option>
+            <option value="Produtos">Produtos</option>
         </select>
 
         <!-- lista de serviço gerada dianamicamente -->
         <div id="services">
             <div class="service"></div>
         </div>
+
+        <div id="overlay" class="overlay"></div> <!-- Escurecer tela ao abrir modal-->
+        <div id="service-modal" class="service-modal">
+            <div class="modal-header">
+                <h2 id="modal-title" class="modal-title">Título do Serviço</h2>
+                <a id="close-modal-btn" class="close-modal-btn">X</a>
+            </div>
+            <div id="modal-image" class="modal-image"></div>  
+            <div id="modal-advantages" class="modal-advantages"></div>
+            <a href="../page-contact-us/contact.html" class="modal-service-btn1">Solicite agora seu orçamento</a>
+          </div>
     </main>
     <script src="script-service.js"></script>
 </body>
