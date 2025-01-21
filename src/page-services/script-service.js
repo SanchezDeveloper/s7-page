@@ -123,7 +123,7 @@ const overlay = document.getElementById('overlay');
 function openModal(service) {
     // Preenche o modal com as informações do serviço
     modalTitle.textContent = service.title;  // Título do serviço
-    modalImage.innerHTML = `<img src="${service.image2}" alt="Imagem do Serviço">`;  // Imagem adicional (image2)
+    modalImage.innerHTML = `<img src="${service.image}" alt="Imagem do Serviço">`;  // Imagem adicional (image2)
     modalAdvantages.textContent = service.advantages;  // Vantagens do serviço
 
     // Exibe o modal e a sobrecarga (se existir)

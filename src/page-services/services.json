@@ -5,43 +5,79 @@
         "title": "Manutenção de Portas de Enrolar Automáticas",
         "description": "Manutenção de portas de enrolar automáticas, garantindo o funcionamento eficiente e durabilidade, com serviços especializados para ambientes residenciais, comerciais e industriais.",
         "advantages": "A manutenção de portas de enrolar automáticas é fundamental para garantir o seu funcionamento adequado e prolongar sua vida útil. Entre as vantagens dessa manutenção, destacam-se a prevenção de falhas inesperadas, o aumento da segurança, a redução de custos com reparos emergenciais e a melhoria na eficiência operacional. Com inspeções periódicas, é possível identificar e corrigir problemas antes que se tornem mais graves, assegurando o bom desempenho e a durabilidade das portas.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-KUlZtJk5UB8rbeh2nY_raE0DMrxv6KFFqQ&s",
-        "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-rIBXYFFSXPECKxejkr8hQwbm_foWQ1r3Gw&s"
+        "image": "../image/porta-enr-manut.jpg"   
     },
     {
         "id": 2,
         "sector": "Portas de Enrolar",
-        "title": "Porta de Enrolar Automática Fechada",
+        "title": "Porta de Enrolar Automática (Lâmina Fechada)",
         "description": "Portas de enrolar automáticas com lâminas fechadas, projetadas para oferecer alta resistência, segurança privacidade e praticidade, ideais para proteger ambientes comerciais e industriais com eficiência.",
         "advantages": "A porta de enrolar automática fechada oferece uma série de vantagens para estabelecimentos comerciais e industriais. Ela proporciona segurança elevada, impedindo a entrada não autorizada, e ainda otimiza o uso de espaço, já que o sistema de enrolamento vertical permite o armazenamento de mais itens. Além disso, é uma solução prática, pois pode ser operada de forma remota ou com sensores de movimento, garantindo maior conveniência e eficiência. Com a durabilidade e resistência típicas dos materiais utilizados, a porta de enrolar automática é uma opção confiável para proteger e agilizar o acesso ao ambiente.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-KUlZtJk5UB8rbeh2nY_raE0DMrxv6KFFqQ&s",
-        "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-rIBXYFFSXPECKxejkr8hQwbm_foWQ1r3Gw&s"
+        "image": "../image/porta-enr-fech.jpg"
     },
     {
         "id": 3,
         "sector": "Portas de Enrolar",
-        "title": "Porta de Enrolar Automática Transvision",
-        "description": "Portas de enrolar automáticas com lâminas transvision, combinando design moderno, ventilação e visibilidade, ideais para segurança e praticidade em ambientes comerciais e residenciais.",
+        "title": "Porta de Enrolar Automática (Lâmina Transvision)",
+        "description": "Portas de enrolar automáticas com lâminas transvision, combinando design moderno, ventilação e visibilidade, ideais para segurança e praticidade em ambientes comerciais e residenciais. ",
         "advantages": "A porta de enrolar automática Transvision oferece praticidade e segurança, ideal para espaços comerciais e industriais. Seu sistema de automação proporciona um fechamento rápido e eficiente, garantindo maior controle de acesso. Além disso, a durabilidade dos materiais utilizados e a resistência a condições externas fazem dessa porta uma solução ideal para ambientes de alto fluxo e segurança, reduzindo o desgaste e manutenção ao longo do tempo.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-rIBXYFFSXPECKxejkr8hQwbm_foWQ1r3Gw&s",
-        "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-rIBXYFFSXPECKxejkr8hQwbm_foWQ1r3Gw&s"
+        "image": "../image/porta-enr-trans.jpg"
     },
     {
         "id": 4,
         "sector": "Produtos",
-        "title": "Kit Porta de Enrolar Automática",
-        "description": "Manutenções especializadas em serralheria, garantindo a durabilidade e o bom funcionamento de portões, grades e estruturas metálicas, com serviços de ajuste, solda e reparo.",
-        "advantages": "A manutenção de teste teste teste dessa manutenção, destacam-se a prevenção de falhas inesperadas, o aumento da segurança, a redução de custos com reparos emergenciais e a melhoria na eficiência operacional. Com inspeções periódicas, é possível identificar e corrigir problemas antes que se tornem mais graves, assegurando o bom desempenho e a durabilidade das portas.",
-        "image": "https://www.ferrobran.com.br/imagens/sobre.jpg",
-        "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-rIBXYFFSXPECKxejkr8hQwbm_foWQ1r3Gw&s"
+        "title": "Kit Testeira",
+        "description": "Sistema de placas pronto para instalação na base e estrutura de perfil da porta de enrolar automática.",
+        "advantages": "O Kit Testeira oferece praticidade e eficiência para serralherias, garantindo fácil instalação e acabamento de alta qualidade para portas de enrolar automáticas. É uma solução que otimiza o processo de montagem, agregando funcionalidade e durabilidade ao projeto.",
+        "image": "../image/kit testeira.jpg"
     },
     {
         "id": 5,
         "sector": "Produtos",
-        "title": "Produto único de exemplo",
+        "title": "Controle EVO com Sistema de Alarme e Infravermelho",
+        "description": "Controle EVO, ideal para soluções avançadas de automação e segurança. O kit inclui uma central, dois controles remotos, sistema de alarme integrado e tecnologia de infravermelho, proporcionando maior proteção e conveniência em projetos de serralheria.",
+        "advantages": "O Controle EVO com Sistema de Alarme e Infravermelho é a escolha perfeita para serralheiros que buscam qualidade e tecnologia. Com funções integradas de segurança e automação, o kit oferece praticidade, confiabilidade e uma experiência moderna ao cliente, agregando valor ao projeto.",
+        "image": "../image/controle.jpg"
+    },
+    {
+        "id": 6,
+        "sector": "Produtos",
+        "title": "Kit Testeira",
         "description": "Manutenções especializadas em serralheria, garantindo a durabilidade e o bom funcionamento de portões, grades e estruturas metálicas, com serviços de ajuste, solda e reparo.",
         "advantages": "A manutenção de portas de enrolar automáticas é fundamental para garantir o seu funcionamento adequado e prolongar sua vida útil. Entre as vantagens dessa manutenção, destacam-se a prevenção de falhas inesperadas, o aumento da segurança, a redução de custos com reparos emergenciais e a melhoria na eficiência operacional. Com inspeções periódicas, é possível identificar e corrigir problemas antes que se tornem mais graves, assegurando o bom desempenho e a durabilidade das portas.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-KUlZtJk5UB8rbeh2nY_raE0DMrxv6KFFqQ&s",
-        "image2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-rIBXYFFSXPECKxejkr8hQwbm_foWQ1r3Gw&s"
+        "image": "../image/kit testeira.jpg"
+    },
+    {
+        "id": 7,
+        "sector": "Produtos",
+        "title": "Botoeira de Comando",
+        "description": "Botoeira de comando, acionador via cabo, ideal para automatizadores. Pode ser ligada em paralelo com outras botoeiras, garantindo maior flexibilidade e controle nos sistemas de automação.",
+        "advantages": "A Botoeira de Comando oferece praticidade e eficiência na automação de sistemas, permitindo o controle fácil e integrado de automatizadores. Sua funcionalidade em paralelo com outras botoeiras proporciona maior versatilidade, atendendo diferentes demandas de instalação com segurança e confiabilidade.",
+        "image": "../image/botoeira.jpg"
+    },
+    {
+        "id": 8,
+        "sector": "Produtos",
+        "title": "Motor Automatizador AC",
+        "description": "Os Automatizadores AC são reconhecidos por serem automatizadores para portas de enrolar com total segurança e diferenciais por serem produzidos com materiais da mais alta qualidade.",
+        "advantages": "O Motor Automatizador AC oferece segurança, durabilidade e eficiência na automação de portas de enrolar. Produzido com materiais de alta qualidade, garante resistência e desempenho superior, sendo uma solução confiável para serralherias que buscam excelência em seus projetos.",
+        "image": "../image/motor-ac.jpg"
+    },
+    {
+        "id": 9,
+        "sector": "Produtos",
+        "title": "Motor Automatizador ACDC",
+        "description": "Os Automatizadores AC-DC são reconhecidos por serem automatizadores para portas de enrolar com sistema no-break, fabricados com materiais de alta qualidade. Garantem segurança e previnem problemas indesejáveis em caso de falta de energia, mantendo o funcionamento de abertura e fechamento das portas.",
+        "advantages": "O Motor Automatizador ACDC oferece alta confiabilidade e praticidade, ideal para quem busca soluções seguras e eficientes. Seu sistema no-break assegura o funcionamento mesmo em situações de falta de energia, garantindo que as portas de enrolar continuem operando normalmente. É uma opção robusta, de fácil instalação, que aumenta a segurança e o conforto dos usuários.",
+        "image": "../image/motor-Dc.jpg"
+    },
+    {
+        "id": 10,
+        "sector": "Produtos",
+        "title": "Kit Completo de Porta de Enrolar Automática",
+        "description": "O Kit Completo de Porta de Enrolar Automática é a solução ideal para quem busca praticidade e segurança em portas de enrolar automatizadas. Composto por motor de alta durabilidade, sistema de controle remoto, trilhos e todos os componentes necessários para instalação, garante o perfeito funcionamento e agilidade nas operações de abertura e fechamento.",
+        "advantages": "O Kit Completo de Porta de Enrolar Automática oferece uma instalação simplificada, com todos os componentes de qualidade superior para um desempenho impecável. Além de garantir maior segurança e conforto, o kit proporciona uma operação silenciosa e eficiente, ideal para ambientes comerciais e industriais. A automação traz maior praticidade e valor agregado ao seu negócio.",
+        "image": "../image/kit-comp.jpg"
     }
+    
 ]
