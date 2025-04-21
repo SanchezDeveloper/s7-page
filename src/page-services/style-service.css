@@ -414,6 +414,19 @@ main {
 .modal-service-btn1:hover {
     color: #f48222;
 }
+
+footer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999999;
+}
+footer a {
+    text-decoration: none;
+    color: #8822ff;
+}
+
 /*Até 4k*/
 @media (max-width: 2057px) {
     .service {

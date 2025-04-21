@@ -381,6 +381,18 @@ header {
     color: #f48222;
 }
 
+footer {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999999;
+}
+footer a {
+    text-decoration: none;
+    color: #8822ff;
+}
+
 
 
 /*Epecífico*/

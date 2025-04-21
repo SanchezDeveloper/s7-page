@@ -157,7 +157,7 @@ header {
 /*section 1 */
 
 main {
-    min-height: 80vh;
+    min-height: 40vh;
     max-width: 80vw;
     display: flex;
     justify-content: center;
@@ -212,13 +212,13 @@ input[type=submit]:hover {
 }
 
 .contact-links {
-    min-height: 80vh;
+    min-height: 40vh;
     max-width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 .contact-links a {
     text-decoration: none;
@@ -241,31 +241,22 @@ input[type=submit]:hover {
     margin: 50px ;
 }
 
-.social-icons-contact a:not(:first-child) {
-    margin-left: 20px;
-}
-.maps-bg {
+footer {
+    height: 40px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    height: 350px;
-    width: 340px;
-    text-align: center;
-    transition: 0.3s ease-in-out;
-    background-image: url(../image/maps-bg.jpeg);
-    background-position: center;
+    color: #999999;
 }
-
-.maps-bg:hover {
-    -webkit-box-shadow: inset 43px 43px 17px -37px rgba(0,0,0,0.75);
-    -moz-box-shadow: inset 43px 43px 17px -37px rgba(0,0,0,0.75);
-    box-shadow: inset 43px 43px 17px -37px rgba(0,0,0,0.75);
+footer a {
+    text-decoration: none;
+    color: #8822ff;
 }
 
 
 /*Epecífico*/
 @media (max-width: 616px) {
-    
+
 }
 /*Mobile*/
 @media (max-width: 480px) {
