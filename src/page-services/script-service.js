@@ -75,8 +75,8 @@ function renderServices(services) {
                 <h2>${service.title}</h2>
                 <p>${service.description}</p>
                 <div class="service-buttons">
-                    <a href="../page-contact-us/contact.html" class="service-btn1">Solicite agora seu orçamento</a>
-                    <a href="#" class="service-btn2">Saiba Mais</a>
+                    <a href="../page-contact-us/contact.html" class="service-btn1">SOLICITAR ORÇAMENTO</a>
+                    <a href="#" class="service-btn2">SAIBA MAIS</a>
                 </div>
             </div>
         `;
