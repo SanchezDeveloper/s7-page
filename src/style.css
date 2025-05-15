@@ -238,8 +238,8 @@ header {
 /*primeiro slide específico*/
 .first img{
     position: absolute;
-    height: 200px;
-    width: 200px;
+    height:200px;
+    width: 300px;
     margin-bottom: 200px;
 }
 
